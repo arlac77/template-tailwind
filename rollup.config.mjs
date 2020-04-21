@@ -1,3 +1,4 @@
+import { readFileSync } from "fs"; 
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
@@ -6,7 +7,10 @@ import postcssImport from 'postcss-import';
 import tailwindcss from 'tailwindcss';
 
 import dev from "rollup-plugin-dev";
-import { name, description, version, config } from "./package.json";
+
+const { name, description, version, config } = JSON.parse(
+    readFileSync("./package.json", { endoding: "utf8" })
+  );
 
 const production = !process.env.ROLLUP_WATCH;
 const dist = "public";
