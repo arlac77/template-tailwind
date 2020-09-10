@@ -5,7 +5,7 @@
     "tailwindcss": "^1.8.6"
   },
   "scripts": {
-    "prepare": "rollup -c"
+    "prepare": "rollup -c {{rollup.config}}"
   },
   "template": {
     "inheritFrom": [
