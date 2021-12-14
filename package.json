@@ -1,8 +1,8 @@
 {
   "devDependencies": {
-    "rollup-plugin-postcss": "^4.0.1",
+    "rollup-plugin-postcss": "^4.0.2",
     "postcss-import": "14.0.2",
-    "tailwindcss": "^2.2.8"
+    "tailwindcss": "^3.0.2"
   },
   "scripts": {
     "prepare": "rollup -c {{rollup.config}}"
